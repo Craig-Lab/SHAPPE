@@ -1,0 +1,22 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2023 The MathWorks, Inc.
+             R2023b Update 9 (23.2.0.2668659) 64-bit (glnxa64)
+                               July 10, 2024
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >>>>>>>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >>>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >>>>>>>>>> >> >> >> >> >> >> >> >> >> >> >> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Starting partition #1.
+[Warning: The temporary variable 'folder_replicates_px' will be cleared at the
+beginning of each iteration of the parfor-loop. If 'folder_replicates_px' is
+used before it is set, a runtime error will occur. For more information, see
+Parallel for Loops in MATLAB, "Uninitialized Temporaries".] 
+[Warning: The temporary variable 'nCompletedReplicates' will be cleared at the
+beginning of each iteration of the parfor-loop. If 'nCompletedReplicates' is
+used before it is set, a runtime error will occur. For more information, see
+Parallel for Loops in MATLAB, "Uninitialized Temporaries".] 
+Starting parallel pool (parpool) using the 'Processes' profile ...
+Fontconfig warning: "/usr/share/fontconfig/conf.avail/05-reset-dirs-sample.conf", line 6: unknown element "reset-dirs"
+
