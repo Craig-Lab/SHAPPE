@@ -229,7 +229,7 @@ resultsSimplified = load('SHAPPE_HyperparameterOptimisation_Simplified.mat','res
 resultsSimplified = resultsSimplified.resultsOptimised;
 
 %%% Larger configurations
-resultsDomainIncrease = load('SHAPPE_HyperparameterOptimisation_DomainIncrease_new.mat','resultsOptimised');
+resultsDomainIncrease = load('SHAPPE_HyperparameterOptimisation_DomainIncrease.mat','resultsOptimised');
 resultsDomainIncrease = resultsDomainIncrease.resultsOptimised;
 
 %% Sort patients
