@@ -4,6 +4,7 @@ Authors: Blanche Mongeon and Morgan Craig
 Corresponding author: blanche.mongeon@umontreal.ca
 
 ## Data sets from original article
+### Tumour-microenvironments reconstructions
 The folder `IMC_TMEReconstructions` contains:
 1. the 87 original IMC samples,
 2. their corresponding 10 same-size ECSR reconstructions (or CSR reconstructions for homogeneous samples),
@@ -29,18 +30,50 @@ More specifically:
   with regards with the average normalised absolute clustering errors at distance 20, 40 and 60um, and their mean), as obtained with Optuna.
 - Files `SHAPPE_HyperparameterOptimisation_SameSize.mat`, `SHAPPE_HyperparameterOptimisation_Simplified.mat` and `SHAPPE_HyperparameterOptimisation_DomainIncrease.mat`,
   and more specifically their `resultsOptimised` fields, contain the performance metrics (rows) for each of the 87 samples (columns). Metrics are in the order:
-  1. Excess out of the 95 C.I. of H(20um),
-  2. Excess out of the 95 C.I. of H(40um),
-  3. Excess out of the 95 C.I. of H(60um),
-  4. Raw difference with H(20um),
-  5. Raw difference with H(40um),
-  6. Raw difference with H(60um),
-  7. eDD,
-  8. eNN,
-  9. eSigma,
-  10. ePi.
+1. Excess out of the 95 C.I. of H(20um),
+2. Excess out of the 95 C.I. of H(40um),
+3. Excess out of the 95 C.I. of H(60um),
+4. Raw difference with H(20um),
+5. Raw difference with H(40um),
+6. Raw difference with H(60um),
+7. eDD,
+8. eNN,
+9. eSigma,
+10. ePi.
   Fields `resultsCSR` and `resultsECSR` in the file `SHAPPE_HyperparameterOptimisation_SameSize.mat` contain the same metrics for the CSR and ECSR reconstructions, respectively.
 
-The file `IMC_Results.m` allows any user to recreate the figures in the original article. 
+The file `IMC_Results.m` allows any user to recreate the figures in the original article.
+
+The code to generate the reconstructions is found in the main folder:
+
+- `SHAPPE_commands.m` can be used to regenerate the SHAPPE reconstructions.
+- `SHAPPE_commands_IMC_DomainEnlargement.m` contains the code to generate the larger domain reconstructions, and
+  `SHAPPEPerformanceEvaluation_EnlargedDomains.m` contains the code to evaluate them.
+
+File `SHAPPEResults.pdf` contains all the same-size SHAPPE reconstructions (with and without additional environmental constraints) and their corresponding metrics.
+
+### PhysiCell
+
+The ABM and IMC samples share the same cell types, but not the same cell type codes. Hence, the file `generateABMInitialConditions.m` map the larger domain 
+reconstructions with IMC cell types code to aBM cell type codes using the `mapIMC_to_ABM.m` function. It also samples additional repulsion regions in an area 
+equal to twice the larger domain area, to account for domain increase during the ABM simulations.
+
+The folder `PhysiCell_SHAPPE` contains the requirements, the code and the scripts for the ABM simulations.
+
+Subfolder `scripts` contains the scripts used on Digital Research Alliance of Canada servers. 
 
 ## Using SHAPPE
+
+SHAPPE can be used via the file `SHAPPE_commands.m`. A user-guide is currently under preparation to facilitate its use and possible reimplementations.
+
+## Citation
+https://doi.org/10.64898/2026.10.14.759208
+
+## Zenodo
+The archived version of this repository is available on Zenodo:
+
+Blanche Mongeon. (2026). Craig-Lab/SHAPPE: SHAPPEing agent-based models to spatial data: Sequential Hooke's law Algorithm for Point Pattern reconstruction with Environmental constraints (Version v1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23954132
+
+## Additional information
+
+Any additional information and/or data requests can be sent to blanche.mongeon@umontreal.ca .
