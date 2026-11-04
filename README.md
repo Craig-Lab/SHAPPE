@@ -64,7 +64,7 @@ Subfolder `scripts` contains the scripts used on Digital Research Alliance of Ca
 
 ## Using SHAPPE
 
-SHAPPE can be used via the file `SHAPPE_commands.m`. A user-guide is correctly under preparation to facilitate its use and possible reimplementations.
+SHAPPE can be used via the file `SHAPPE_commands.m`. A user-guide is currently under preparation to facilitate its use and possible reimplementations.
 
 ## Additional information
 
