@@ -1,6 +1,5 @@
 function winv = isotropic_winv_square_mc(x, y, rvec, R, nAng)
-% Isotropic edge correction for square [-R,R]^2 via angle sampling.
-% Deterministic angles => reproducible and less noisy.
+    % Isotropic edge correction for square [-R,R]^2 via angle sampling.
 
     rvec = rvec(:);
     winv = ones(size(rvec));
@@ -22,7 +21,7 @@ function winv = isotropic_winv_square_mc(x, y, rvec, R, nAng)
 
         inside = (abs(X) <= R) & (abs(Y) <= R);
         p = mean(inside);
-        p = max(p, 1/nAng);   % safety
+        p = max(p, 1/nAng);
 
         winv(k) = 1/p;
     end
