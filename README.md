@@ -66,6 +66,14 @@ Subfolder `scripts` contains the scripts used on Digital Research Alliance of Ca
 
 SHAPPE can be used via the file `SHAPPE_commands.m`. A user-guide is currently under preparation to facilitate its use and possible reimplementations.
 
+## Citation
+https://doi.org/10.64898/2026.10.14.759208
+
+## Zenodo
+The archived version of this repository is available on Zenodo:
+
+Blanche Mongeon. (2026). Craig-Lab/SHAPPE: SHAPPEing agent-based models to spatial data: Sequential Hooke's law Algorithm for Point Pattern reconstruction with Environmental constraints (Version v1.0.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.23954132
+
 ## Additional information
 
 Any additional information and/or data requests can be sent to blanche.mongeon@umontreal.ca .
